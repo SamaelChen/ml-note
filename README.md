@@ -1,3 +1,3 @@
 # My Personal Book
 
-This is the notes about machine learning.
+These are the notes about machine learning.

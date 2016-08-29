@@ -1,3 +1,3 @@
 # Summary
 
-* [Ch1 K-Means](chapter1.md)
+* [Ch1 An Overview of Statistical Learning](chapter1.md)

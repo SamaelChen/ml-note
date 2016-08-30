@@ -1,0 +1,331 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Ch1 An Overview of Statistical Learning · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Ch1 An Overview of Statistical Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Ch1 An Overview of Statistical Learning</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="overview">Overview</h1><h2 id="notation">Notation</h2><ul><li>We will use $n$ to represent the number of distinct data points, or observations.
+</li>
+<li>Let $p$ denote the number of variables that are available for use in making predictions.
+</li>
+<li>We will let $x_{ij}$ represent the value of the $j$th variable for the $i$th observation, where $i=1,\ 2,\ \dots,\ n$, $j=1,\ 2,\ \dots,\ p$.
+</li>
+<li>We let $\textbf{X}$ denote a $n \times p$ matrix whose $(i,j)$th element is $x_{ij}$.That is,
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{X}=\begin{pmatrix}
+  x_{11} & x_{12} & \dots & x_{1p} \\
+  x_{21} & x_{22} & \dots & x_{2p} \\
+  \vdots & \vdots & \ddots & \vdots \\
+  x_{n1} & x_{n2} & \dots & x_{np}
+  \end{pmatrix}
+  </script></p><ul><li>We denote $x_i$ as the $i$th row of  $\textbf{X}$. $x_i$ is a vector of length $p$,, containing the $p$ variable measurements for the $i$th observation. That is,
+</li></ul>
+<p><script type="math/tex; mode=display">
+  x_i=\begin{pmatrix}
+  x_{i1} \\
+  x_{i2} \\
+  \vdots \\
+  x_{ip}
+  \end{pmatrix}
+  </script></p><ul><li>If we are interested in the columns of $\textbf{X}$, which we will write as $\textbf{x}_1,\ \textbf{x}_2,\ \dots,\ \textbf{x}_p$. That is,
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{x}_j=\begin{pmatrix}
+  \textbf{x}_{1j} \\
+  \textbf{x}_{2j} \\
+  \vdots \\
+  \textbf{x}_{nj}
+  \end{pmatrix}
+  </script></p><ul><li>If we use these notations, we can write $\textbf{X}$ as
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{X}=\begin{pmatrix}
+  \textbf{x}_1 & \textbf{x}_2 & \dots & \textbf{x}_p
+  \end{pmatrix}
+  </script></p><p><script type="math/tex; mode=display">
+\textbf{X}=\begin{pmatrix}
+x^T_1 \\
+x^T_2 \\
+\vdots \\
+x^T_n
+\end{pmatrix}
+</script></p><ul><li>The $^T$ notation denotes the $transpose$ of a matrix or vector. For example,
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{X}^T=\begin{pmatrix}
+  x_{11} & x_{21} & \dots & x_{n1} \\
+  x_{12} & x_{22} & \dots & x_{n2} \\
+  \vdots & \vdots & \ddots & vdots \\
+  x_{1p} & x_{2p} & \dots & x_{np}
+  \end{pmatrix}
+  </script></p><p>while</p><p><script type="math/tex; mode=display">
+  x^T_i=\begin{pmatrix}
+  x_{i1} & x{i2} & \dots & x_{ip}
+  \end{pmatrix}
+  </script></p><ul><li>We use $y_i$ to denote the $i$th observation of the variable on which we wish to predict. Hence, we write the set of all $n$ observations in vector form as
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{y}=\begin{pmatrix}
+  y_1 \\
+  y_2 \\
+  \vdots \\
+  y_n
+  \end{pmatrix}
+  </script></p><ul><li>We always denote a vector of length n in <em><font face="Computer Modern">lower case bold</font></em> e.g.
+</li></ul>
+<p><script type="math/tex; mode=display">
+  \textbf{a}=\begin{pmatrix}
+  a_1 \\
+  a_2 \\
+  \vdots \\
+  a_n
+  \end{pmatrix}
+  </script></p><ul><li><p>If a vector not of length n will be denoted in <em><font face="Computer Modern"> lower case normal font</font></em>, e.g. $a$.</p></li>
+<li><p>Matrix will be denoted using <em><font face="Computer Modern"> bold capitals</font></em>, such as $\textbf{A}$.</p></li>
+<li>Random variables will be denoted using <em><font face="Computer Modern"> capital normal font</font></em>, e.g. $A$, regardless of their dimensions.
+</li>
+<li>To indicate that an object is a scalar
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ch1 An Overview of Statistical Learning","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","livereload"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1.md","mtime":"2016-08-30T03:51:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-30T03:49:50.688Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

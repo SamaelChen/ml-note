@@ -99,7 +99,7 @@ $$
 
 + To indicate that an object is a scalar, we will use the notation \\(a \in \mathbb{R} \\). To indicate that it is a vector of length \\(k\\), we will use \\(a \in \mathbb{R}^k\\). We will indicate that an object is a \\(r \times s\\) matrix using \\(\textbf{A} \in \mathbb{R}^{r \times s}\\).
 
-+ Suppose that \\( \textbf{A} \in \mathbb{R}^{r \times d} \\) and \\( \textbf{B} \in \mathbb{R}^{d \times s} \\). Then the product of \\(\textbf{A}\\) and \\(\textbf{B}\\) is denoted \\(\textbf{AB}\\). That is, \\( (\textbf{AB})_{ij} \= \begin{matrix} \sum_{k=1}^d a_{ik}b_{kj} \end{matrix} \\). As an example, consider
++ Suppose that \\( \textbf{A} \in \mathbb{R}^{r \times d} \\) and \\( \textbf{B} \in \mathbb{R}^{d \times s} \\). Then the product of \\(\textbf{A}\\) and \\(\textbf{B}\\) is denoted \\(\textbf{AB}\\). That is, \\( (\textbf{AB})_{ij}\\) \\(\=\\) \\(\begin{matrix} \sum_{k=1}^d a_{ik}b_{kj} \end{matrix} \\). As an example, consider
 $$\textbf{A}=\begin{pmatrix}
 1 & 2 \\
 3 & 4

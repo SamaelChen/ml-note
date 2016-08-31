@@ -28,14 +28,14 @@ x_{ip}
 \end{pmatrix}
 $$
 
-,+ If we are interested in the columns of $$\textbf{X}$$, which we will write as $$\textbf{x}_1,\ \textbf{x}_2,\ \dots,\ \textbf{x}_p $$. Each is a vector of length $$n$$ That is,
+,+ If we are interested in the columns of $$\textbf{X}$$, which we will write as $$\textbf{x}_1,\ \textbf{x}_2,\ \dots,\ \textbf{x}_p $$. Each is a vector of length $$n$$, That is,
 
 $$
 \textbf{x}_j=\begin{pmatrix}
-\textbf{x}_{1j} \\
-\textbf{x}_{2j} \\
+x_{1j} \\
+x_{2j} \\
 \vdots \\
-\textbf{x}_{nj}
+x_{nj}
 \end{pmatrix}
 $$
 

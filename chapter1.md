@@ -28,7 +28,7 @@ x_{ip}
 \end{pmatrix}
 $$
 
-+ If we are interested in the columns of $$\textbf{X}$$, which we will write as $$\textbf{x}_1,\ \textbf{x}_2,\ \dots,\ \textbf{x}_p $$. That is,
+,+ If we are interested in the columns of $$\textbf{X}$$, which we will write as $$\textbf{x}_1,\ \textbf{x}_2,\ \dots,\ \textbf{x}_p $$. Each is a vector of length $$n$$ That is,
 
 $$
 \textbf{x}_j=\begin{pmatrix}

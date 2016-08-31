@@ -18,7 +18,7 @@ x_{n1} & x_{n2} & \dots & x_{np}
 \end{pmatrix}
 $$
 
-+ We denote $$x_i$$ as the $$i$$th row of  $$\textbf{X}$$. $$x_i$$ is a vector of length $$p$$,, containing the $$p$$ variable measurements for the $$i$$th observation. That is,
++ We denote $$x_i$$ as the $$i$$th row of  $$\textbf{X}$$. $$x_i$$ is a vector of length $$p$$, containing the $$p$$ variable measurements for the $$i$$th observation. That is,
 $$
 x_i=\begin{pmatrix}
 x_{i1} \\

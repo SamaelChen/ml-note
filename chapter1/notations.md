@@ -1,5 +1,3 @@
-# Overview
-
 ## Notation
 
 + We will use $$n$$ to represent the number of distinct data points, or observations.

@@ -6,3 +6,4 @@
 * [Chapter2 Statistical Learning](chapter2/README.md)
     * [What is Statistical Learning](chapter2/what-is-statistical-learning.md)
     * [Assessing Model Accuracy](chapter2/assessing-model-accuracy.md)
+    * [Exercise](chapter2/exercises.md)

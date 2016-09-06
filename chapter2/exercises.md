@@ -5,25 +5,25 @@
 (c) Better. With more degree of freedom, a flexible approach will obtain a better fit.
 (d) Worse. Flexible approaches will fit to the noises and increase the variance of error terms.
 
-2. (a) Regression. We are interested in inference. Quantitative output of CEO salary. $n$: the top of 500 firms in the US. $p$: profit, number of employees, industry.
-(b) Classification. We are interested in prediction. Predict the new product's success or failure. $n$: 20 similar products. $p$: price charged, marketing budget, competition price, and ten other variables.
-(c) Regression. We are interested in prediction. Quantitative output of the % change in the dollar. $n$: All weekly data of 2012. $p$: the % change in the US market, the % change in the British market, the % change in the German market.
+2. (a) Regression. We are interested in inference. Quantitative output of CEO salary. $$n$$: the top of 500 firms in the US. $$p$$: profit, number of employees, industry.
+(b) Classification. We are interested in prediction. Predict the new product's success or failure. $$n$$: 20 similar products. $$p$$: price charged, marketing budget, competition price, and ten other variables.
+(c) Regression. We are interested in prediction. Quantitative output of the % change in the dollar. $$n$$: All weekly data of 2012. $$p$$: the % change in the US market, the % change in the British market, the % change in the German market.
 
 3. (a) <img src=../image/ch2-exercise.jpg width=50%>
 (b) **bias**: Generally, more flexible methods result in less bias.
 **variance**: The variance of error terms will increase with the increasing of flexibility of methods, since they will attempt to fit the noises.
-**$\epsilon$**(irreducible error): The irreducible error is the limit of test error, the under-bound of test error.
+**$$\epsilon$$**(irreducible error): The irreducible error is the limit of test error, the under-bound of test error.
 **training error**: It likes *bias* in some way. But on the other hand, the lower training error may induce higher variance.
-**test error**: It is the sum of bias, variance and $\epsilon$, when the level of flexibility is too high, may cause over-fitting.
+**test error**: It is the sum of bias, variance and $$\epsilon$$, when the level of flexibility is too high, may cause over-fitting.
 
 4. Well, there are many examples, and alright, I'm a little lazy now.
 
-5. The biggest advantage of a very flexible model is it can estimate a better $\hat{f}$ than less flexible models.
+5. The biggest advantage of a very flexible model is it can estimate a better $$\hat{f}$$ than less flexible models.
 The biggest disadvantage of a very flexible model is it may easily cause over-fit.
 When we wanna a prediction, the higher flexible methods will be preferred, and when we wanna a inference, the less flexible methods will be preferred.
 
-6. The parametric methods assume a form of $f$, but non-parametric methods don't assume a particular functional form of $f$.
-The advantages of parametric methods are they can simplify the model of $f$ to a fewer parameters, and don't require a large number of observations.
+6. The parametric methods assume a form of $f$, but non-parametric methods don't assume a particular functional form of $$f$$.
+The advantages of parametric methods are they can simplify the model of $$f$$ to a fewer parameters, and don't require a large number of observations.
 The disadvantages of parametric methods are they may also cause over-fit if using a more complex model.
 
 7. (a) 3.000000 2.000000 3.162278 2.236068 1.414214 2.236068

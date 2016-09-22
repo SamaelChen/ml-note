@@ -1,5 +1,7 @@
 ## Exercises
 
+This exercise is from book *An Introduction to Statistical Learning with R*.
+
 1. (a) Better. A more flexible method will obtain a better estimation with large sample size.
 (b) Worse. A more flexible approach will cause over-fitting when the number of predictors is extremely large and the number of observations is small.
 (c) Better. With more degree of freedom, a flexible approach will obtain a better fit.

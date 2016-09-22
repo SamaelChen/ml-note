@@ -7,3 +7,6 @@
     * [What is Statistical Learning](chapter2/what-is-statistical-learning.md)
     * [Assessing Model Accuracy](chapter2/assessing-model-accuracy.md)
     * [Exercise](chapter2/exercises.md)
+* [Chapter3 Overview of Supervised Learning](chapter3/README.md)
+    * [Variable Types and Terminology](chapter3/variable-types-and-terminology.md)
+    * [Two Simple Approaches to Prediction](chapter3/two-simple-approaches-to-prediction.md)

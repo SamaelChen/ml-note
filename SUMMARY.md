@@ -10,3 +10,5 @@
 * [Chapter3 Overview of Supervised Learning](chapter3/README.md)
     * [Variable Types and Terminology](chapter3/variable-types-and-terminology.md)
     * [Two Simple Approaches to Prediction](chapter3/two-simple-approaches-to-prediction.md)
+    * [Statistical Decision Theory](chapter3/statistical-decision-theory.md)
+    * [Local Methods in High Dimensions](chapter3/local-methods-in-high-dimensions.md)

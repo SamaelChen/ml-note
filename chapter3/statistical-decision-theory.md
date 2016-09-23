@@ -45,7 +45,7 @@ So both $$k$$-nearest neighbors and least squares end up approximating condition
 + Least squares assumes $$f(x)$$ is well approximated by globally linear model.
 + The $$k$$-nearest neighbors assumes $$f(x)$$ is well approximated by a locally constant function.
 
-And if we replace the loss function as $$E|Y-f(x)|$$^[Call it $$L_1$$ criteria], the solution will be the conditional median,
+And if we replace the loss function as $$E|Y-f(x)|$$^[^1], the solution will be the conditional median,
 $$
 \hat{f(x)} = median(Y|X=x),
 $$
@@ -73,3 +73,5 @@ $$
 $$
 
 This solution is known as *Bayes classifier*. And says that we classify to the most possible class, using the conditional distribution $$Pr(G|X)$$.
+
+[^1]: Call it $$L_1$$ criteria

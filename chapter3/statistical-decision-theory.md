@@ -125,4 +125,3 @@ $$
 This solution is known as _Bayes classifier_. And says that we classify to the most possible class, using the conditional distribution $$Pr(G|X)$$.
 
 [^1]: Call it $$L_1$$ criteria
-

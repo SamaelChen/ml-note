@@ -30,7 +30,7 @@ differentiating w.r.t. $$\beta$$ we get the normal equations
 $$
 X^T(y-X\beta)=0.
 $$
-If $$X^TX$$ is nonsingular, then the unique solution is given by
+If $$X^TX$$ is nonsingular, then the unique solution is given by[^1]
 $$
 \hat{\beta}=(X^TX)^{-1}X^Ty,
 $$
@@ -48,7 +48,7 @@ The linear decision boundary from least squares is usually smooth and stable to 
 
 On the other hand, the $$k$$-nearest-neighbor do not rely on the any assumptions, that makes it has low bias. But its decision boundary depends on a handful of training data points, that makes it unstable, and contain high variance.
 
-Each methods has its own situations for which to work best. Linear regression is more suitable for Scenario 1[^1], and the $$k$$-nearest-neighbor is more suitable for Scenario 2[^2].
+Each methods has its own situations for which to work best. Linear regression is more suitable for Scenario 1[^2], and the $$k$$-nearest-neighbor is more suitable for Scenario 2[^3].
 
 A large subset of the most popular techniques in use today are variants of these two simple procedures. The following list describes some ways in which these simple procedures been enhanced:
 
@@ -58,6 +58,15 @@ A large subset of the most popular techniques in use today are variants of these
 + Linear models fit a basis expansion of the original inputs allow arbitrarily complex models.
 + Project pursuit and neural network consist of sums of nonlinearly transformed linear models.
 
-[^1]: Scenario 1: The training data in each class were generated from bivariate Gaussian distributions with uncorrelated components and different means.
+[^1]: $$
+\begin{align}
+\frac{\partial{RSS}}{\partial{\beta}} &= \frac{\partial{tr(\beta^T \mathbf{X}^T \mathbf{X} - \beta^T \mathbf{X}^T \mathbf{X} \beta + \mathbf{y}^T \mathbf{X} \beta - \mathbf{y}^T \mathbf{y})}}{\partial{\beta}} \\
+&= \frac{\partial{tr(\beta \mathbf{I} \beta^T \mathbf{X}^T \mathbf{X})}}{\partial{\beta}}-\frac{\partial{tr(\beta^T \mathbf{X}^T \mathbf{y})}}{\partial{\beta}} - \frac{\partial{tr(\mathbf{y}^T \mathbf{X} \beta)}}{\partial{\beta}} \\
+&= 2(\mathbf{X}^T \mathbf{y} - \mathbf{X}^T \mathbf{X} \beta)
+\end{align}
+$$
+let $$\frac{\partial{RSS}}{\partial{\beta}}=0$$, we can get the solution. The operation rules see reference.
 
-[^2]: Scenario 2: The training data in each class came from a mixture of 10 low-variance Gaussian distributions, with individual means themselves distributed as Gaussian
+[^2]: Scenario 1: The training data in each class were generated from bivariate Gaussian distributions with uncorrelated components and different means.
+
+[^3]: Scenario 2: The training data in each class came from a mixture of 10 low-variance Gaussian distributions, with individual means themselves distributed as Gaussian

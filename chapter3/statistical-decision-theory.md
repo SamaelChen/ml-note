@@ -55,10 +55,25 @@ There are two approximations here:
 * expectation is approximated by averaging over sample data;
 * conditioning at a point is relaxed to conditioning on some region "closed" to target point.
 
-If we get a large training data size $$N$$, as $$N,k \rightarrow \infty$$ and $$k/N \rightarrow 0$$, $$\hat(f(x)) \rightarrow E(Y|X=x)$$.
+If we get a large training data size $$N$$, as $$N,k \rightarrow \infty$$ and $$k/N \rightarrow 0$$, $$\hat{f(x)} \rightarrow E(Y|X=x)$$.
 
 Now let's consider how to make linear model fit this framework. We just assumed $$f(x) \approx x^T\beta$$. Plugging this function into $$EPE$$ and we can solve for $$\beta$$ theoretically:
 
+
+$$
+EPE(\beta) = \int{(y-x^T \beta)^2}Pr(dx,dy)
+$$
+
+$$
+\begin{align}
+\frac{\partial{EPR(\beta)}}{\partial{\beta}} &= \int{2(y-x^T\beta)(-1)xPr(dx,dy)} \\
+&= -2 \int (y-x^T \beta) x Pr(dx,dy)
+\end{align}
+$$
+
+Since $$x^T \beta$$ is a scalar, $$x^T \beta x = x x^T \beta$$.
+
+Therefor, $$\frac{\partial{EPE(\beta)}}{\partial{\beta}}=-2(E(yx)-E(x x^T \beta))$$. Let this equation be 0, and we can get:
 
 $$
 \beta = [E(XX^T)]^{-1}E(XY).

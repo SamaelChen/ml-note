@@ -12,4 +12,5 @@
     * [Two Simple Approaches to Prediction](chapter3/two-simple-approaches-to-prediction.md)
     * [Statistical Decision Theory](chapter3/statistical-decision-theory.md)
     * [Local Methods in High Dimensions](chapter3/local-methods-in-high-dimensions.md)
+    * [Statistical Models, Supervise Learning and Function Approximation](chapter3/statistical-models-supervise-learning-and-function-approximation.md)
 * [Reference](reference/reference.md)

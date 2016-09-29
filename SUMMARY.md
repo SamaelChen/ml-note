@@ -13,4 +13,5 @@
     * [Statistical Decision Theory](chapter3/statistical-decision-theory.md)
     * [Local Methods in High Dimensions](chapter3/local-methods-in-high-dimensions.md)
     * [Statistical Models, Supervise Learning and Function Approximation](chapter3/statistical-models-supervise-learning-and-function-approximation.md)
+    * [Structured Regression Models](chapter3/structured-regression-model.md)
 * [Reference](reference/reference.md)

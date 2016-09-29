@@ -64,8 +64,7 @@ A large subset of the most popular techniques in use today are variants of these
 &= \frac{\partial{tr(\beta \mathbf{I} \beta^T \mathbf{X}^T \mathbf{X})}}{\partial{\beta}}-\frac{\partial{tr(\beta^T \mathbf{X}^T \mathbf{y})}}{\partial{\beta}} - \frac{\partial{tr(\mathbf{y}^T \mathbf{X} \beta)}}{\partial{\beta}} \\
 &= 2(\mathbf{X}^T \mathbf{y} - \mathbf{X}^T \mathbf{X} \beta)
 \end{align}
-$$
-let $$\frac{\partial{RSS}}{\partial{\beta}}=0$$, we can get the solution. The operation rules see reference.
+$$let $$\frac{\partial{RSS}}{\partial{\beta}}=0$$, we can get the solution. The operation rules see reference.
 
 [^2]: Scenario 1: The training data in each class were generated from bivariate Gaussian distributions with uncorrelated components and different means.
 

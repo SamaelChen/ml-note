@@ -14,4 +14,8 @@
     * [Local Methods in High Dimensions](chapter3/local-methods-in-high-dimensions.md)
     * [Statistical Models, Supervise Learning and Function Approximation](chapter3/statistical-models-supervise-learning-and-function-approximation.md)
     * [Structured Regression Models](chapter3/structured-regression-model.md)
+* [Chapter4 Linear Regression](chapter4/README.md)
+    * [Linear Regression Models and Least Squares](chapter4/linear-regression-models-and-least-squares.md)
+    * [Subset Selection](chapter4/subset-selection.md)
+    * [Shrinkage Methods](chapter4/shrinkage-methods.md)
 * [Reference](reference/reference.md)

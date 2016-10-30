@@ -18,4 +18,5 @@
     * [Linear Regression Models and Least Squares](chapter4/linear-regression-models-and-least-squares.md)
     * [Subset Selection](chapter4/subset-selection.md)
     * [Shrinkage Methods](chapter4/shrinkage-methods.md)
+    * [Methods Using Derived Input Directions](methods-using-derived-input-directions.md)
 * [Reference](reference/reference.md)

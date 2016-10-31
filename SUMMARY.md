@@ -20,4 +20,5 @@
     * [Shrinkage Methods](chapter4/shrinkage-methods.md)
     * [Methods Using Derived Input Directions](chapter4/methods-using-derived-input-directions.md)
     * [Discussion: A Comparison of the Selection and Shrinkage Methods](chapter4/a-comparison-of-the-selection-and-shrinkage-methods.md)
+    * [More on the Lasso and Related Path Algorithm](chapter4/more-on-the-lasso-and-related-path-algorithm.md)
 * [Reference](reference/reference.md)

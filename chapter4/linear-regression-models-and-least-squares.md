@@ -199,7 +199,7 @@ The least squares estimates have exactly the same form as before
 $$
 \hat{\mathbf{B}} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{Y}.
 $$
-If the errors \varepsilon = (\varepsilon_1, \dots, \varepsilon_K) are correlated, then it might seem appropriate to modify $$RSS(\mathbf{B})$$ into
+If the errors $$\varepsilon = (\varepsilon_1, \dots, \varepsilon_K)$$ are correlated, then it might seem appropriate to modify $$RSS(\mathbf{B})$$ into
 $$
 RSS(\mathbf{B};\mathbf{\Sigma}) = \sum_{i=1}^N(y_i-f(x_i))^T\mathbf{\Sigma}^{-1}(y_i-f(x_i))
 $$
